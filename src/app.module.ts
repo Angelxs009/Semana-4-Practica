@@ -13,6 +13,7 @@ import { ProductosResolver } from './productos/productos.resolver.js';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'schema.gql'),
       graphiql: true,
+      introspection: true,
     }),
     HttpModule.register({}),
   ],
