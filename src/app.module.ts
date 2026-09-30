@@ -12,6 +12,7 @@ import { ProductosResolver } from './productos/productos.resolver.js';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'schema.gql'),
+      graphiql: true,
     }),
     HttpModule.register({}),
   ],
